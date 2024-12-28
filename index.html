@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multiplication Activity</title>
+</head> 
+<body>
+    <p>This is simple activity to multiply two numbetrs where one parametr is fixed and the other is checked for undefined</p>
+    <button onclick="multiply(4)">Click Me!</button>
+    <p id="result"></p>
+    <script>
+     function multiply(a,b) {
+        if (b== undefined) {
+            alert("THe value of b is undefined");
+            b = 5;
+        }
+        var result = a * b;
+        document.getElementById("result").innerHTML = "The product is:" + result;
+     }   
+    </script>
+</body>   
+</html>
